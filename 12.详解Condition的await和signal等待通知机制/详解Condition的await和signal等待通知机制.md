@@ -4,7 +4,7 @@
 
 1. Condition能够支持不响应中断，而通过使用Object方式不支持；
 2. Condition能够支持多个等待队列（new 多个Condition对象），而Object方式只能支持一个；
-3. Condition能够支持超时时间的设置，而Object不支持
+3. Condition能够支持等待到未来的某个时间（Condition.awaitUtil(Date deadline)），而Object方式不支持；
 
 
 参照Object的wait和notify/notifyAll方法，Condition也提供了同样的方法：
